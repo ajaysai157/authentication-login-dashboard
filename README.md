@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Authentication Login Dashboard
 
 A simple, beautiful, and responsive login and registration system with a dashboard, built using HTML, CSS, and JavaScript. This project demonstrates client-side authentication using localStorage for data persistence.
@@ -96,5 +97,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-*Built with ❤️ using vanilla JavaScript*</content>
-<parameter name="filePath">c:\ajay\Edify\login-page-project\Project\README.md
+*Built with ❤️ using vanilla JavaScript*
