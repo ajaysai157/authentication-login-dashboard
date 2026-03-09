@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container dashboard-container">
+<h1>Dashboard</h1>
+<p class="welcome-text" id="welcomeText"></p>
+
+<div class="dashboard-content">
+<div class="card">
+<h3>Welcome Back!</h3>
+<p>You are successfully logged in.</p>
+</div>
+</div>
+
+<button id="logoutButton" class="logout-btn">Logout</button>
+
+</div>
+
+<script>
+
+const token = localStorage.getItem("token");
+
+if(!token){
+    window.location.href = "index.html";
+}
+
+const user = JSON.parse(localStorage.getItem("userInfo"));
+
+document.getElementById("welcomeText").innerText =
+"Welcome " + user.email;
+
+document.getElementById("logoutButton").onclick = function(){
+
+localStorage.removeItem("token");
+localStorage.removeItem("userInfo");
+
+window.location.href="index.html";
+
+}
+
+</script>
+
+</body>
+</html>
